@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
           }
         }
       })
+      lspconfig.pyright.setup({})
     end
   }
 end)
