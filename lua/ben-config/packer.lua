@@ -45,4 +45,15 @@ return require('packer').startup(function(use)
       lspconfig.pyright.setup({})
     end
   }
+  use {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "saadparwaiz1/cmp_luasnip",
+      "L3MON4D3/LuaSnip",
+    }
+  }
+  use ("ray-x/lsp_signature.nvim")
 end)
