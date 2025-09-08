@@ -26,3 +26,4 @@ Install via pip:
 pip install pyright
 ```
 This should be done in the globall managed environment.
+Small change
