@@ -5,6 +5,7 @@ Install the following LSPs
 ```
 lua_language_server
 pyright
+clangd
 ```
 
 ## lua_language_server
@@ -26,3 +27,11 @@ Install via pip:
 pip install pyright
 ```
 This should be done in the globall managed environment.
+
+## clangd
+Install via apt:
+```
+sudo apt update
+sudo apt install clangd
+which clangd
+```

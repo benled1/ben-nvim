@@ -109,13 +109,19 @@ _G.packer_plugins = {
     path = "/home/benled/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
     url = "https://github.com/ray-x/lsp_signature.nvim"
   },
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+    loaded = true,
+    path = "/home/benled/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/benled/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
-    config = { "\27LJ\2\n±\2\0\0\b\0\18\0\0246\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\0015\3\15\0005\4\r\0005\5\a\0005\6\5\0005\a\4\0=\a\6\6=\6\b\0055\6\t\0=\6\n\0055\6\v\0=\6\f\5=\5\14\4=\4\16\3B\1\2\0019\1\17\0009\1\3\0014\3\0\0B\1\2\1K\0\1\0\fpyright\rsettings\1\0\1\rsettings\0\bLua\1\0\1\bLua\0\14telemetry\1\0\1\venable\1\14workspace\1\0\1\20checkThirdParty\1\16diagnostics\1\0\3\14telemetry\0\16diagnostics\0\14workspace\0\fglobals\1\0\1\fglobals\0\1\2\0\0\bvim\nsetup\vlua_ls\14lspconfig\frequire\0" },
+    config = { "\27LJ\2\n»\2\0\0\b\0\19\0\0286\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\0015\3\15\0005\4\r\0005\5\a\0005\6\5\0005\a\4\0=\a\6\6=\6\b\0055\6\t\0=\6\n\0055\6\v\0=\6\f\5=\5\14\4=\4\16\3B\1\2\0019\1\17\0009\1\3\0014\3\0\0B\1\2\0019\1\18\0009\1\3\0014\3\0\0B\1\2\1K\0\1\0\vclangd\fpyright\rsettings\1\0\1\rsettings\0\bLua\1\0\1\bLua\0\14telemetry\1\0\1\venable\1\14workspace\1\0\1\20checkThirdParty\1\16diagnostics\1\0\3\16diagnostics\0\14workspace\0\14telemetry\0\fglobals\1\0\1\fglobals\0\1\2\0\0\bvim\nsetup\vlua_ls\14lspconfig\frequire\0" },
     loaded = true,
     path = "/home/benled/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
@@ -156,6 +162,11 @@ _G.packer_plugins = {
     path = "/home/benled/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/benled/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/benled/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -168,9 +179,13 @@ time([[Defining packer_plugins]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
-try_loadstring("\27LJ\2\n±\2\0\0\b\0\18\0\0246\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\0015\3\15\0005\4\r\0005\5\a\0005\6\5\0005\a\4\0=\a\6\6=\6\b\0055\6\t\0=\6\n\0055\6\v\0=\6\f\5=\5\14\4=\4\16\3B\1\2\0019\1\17\0009\1\3\0014\3\0\0B\1\2\1K\0\1\0\fpyright\rsettings\1\0\1\rsettings\0\bLua\1\0\1\bLua\0\14telemetry\1\0\1\venable\1\14workspace\1\0\1\20checkThirdParty\1\16diagnostics\1\0\3\14telemetry\0\16diagnostics\0\14workspace\0\fglobals\1\0\1\fglobals\0\1\2\0\0\bvim\nsetup\vlua_ls\14lspconfig\frequire\0", "config", "nvim-lspconfig")
+try_loadstring("\27LJ\2\n»\2\0\0\b\0\19\0\0286\0\0\0'\2\1\0B\0\2\0029\1\2\0009\1\3\0015\3\15\0005\4\r\0005\5\a\0005\6\5\0005\a\4\0=\a\6\6=\6\b\0055\6\t\0=\6\n\0055\6\v\0=\6\f\5=\5\14\4=\4\16\3B\1\2\0019\1\17\0009\1\3\0014\3\0\0B\1\2\0019\1\18\0009\1\3\0014\3\0\0B\1\2\1K\0\1\0\vclangd\fpyright\rsettings\1\0\1\rsettings\0\bLua\1\0\1\bLua\0\14telemetry\1\0\1\venable\1\14workspace\1\0\1\20checkThirdParty\1\16diagnostics\1\0\3\16diagnostics\0\14workspace\0\14telemetry\0\fglobals\1\0\1\fglobals\0\1\2\0\0\bvim\nsetup\vlua_ls\14lspconfig\frequire\0", "config", "nvim-lspconfig")
 time([[Config for nvim-lspconfig]], false)
 
 _G._packer.inside_compile = false

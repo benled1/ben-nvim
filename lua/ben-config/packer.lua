@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
   })
   use ({'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
   use ('nvim-treesitter/playground')
-  use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+  use "nvim-lua/plenary.nvim"
   use {
 	  "ThePrimeagen/harpoon",
 	  branch = "harpoon2",
@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
         }
       })
       lspconfig.pyright.setup({})
+      lspconfig.clangd.setup({})
     end
   }
   use {
@@ -56,4 +57,11 @@ return require('packer').startup(function(use)
     }
   }
   use ("ray-x/lsp_signature.nvim")
+  use {
+	  "windwp/nvim-autopairs",
+	  config = function()
+		  require("nvim-autopairs").setup {}
+	  end,
+  }
+  use "tpope/vim-commentary"
 end)
